@@ -9272,11 +9272,11 @@ li.fancybox-thumbs-loading {
 
 body {
   line-height: 1.5;
-  font-family: "bebas_neue_regular";
+  font-family: "bebas_neue_pro";
   -webkit-font-smoothing: antialiased; }
 
 p {
-  font-family: "bebas_neue_regular";
+  font-family: "bebas_neue_pro";
   color: #fff;
   font-size: 16px;
   letter-spacing: 1px; }
@@ -9364,7 +9364,7 @@ body {
 
 .reveal-text {
   position: relative;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   animation-name: reveal-text;
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -9467,7 +9467,11 @@ body {
     -webkit-transform: scale(1); } }
 
 .nav-section {
-  background: transparent;
+  position: absolute;
+  top: 0;
+  background-color: rgba(13, 45, 77, 0.45);
+  width: 100%;
+  /* background: transparent; */
   padding: 20px 0; }
   .nav-section .navbar {
     padding: 0 20px; }
@@ -9485,7 +9489,7 @@ body {
     padding-right: 25px;
     padding-left: 25px;
     color: #fff;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px; }
   #main-nav .navbar-nav .music-icon {
@@ -9512,10 +9516,11 @@ body {
     overflow: hidden; }
     .hero-slider-wrapper .item .item-image {
       position: relative;
-      width: 70%;
-      margin-left: auto; }
+      width: 100%;
+      margin-right: auto; }
       .hero-slider-wrapper .item .item-image img {
-        width: 100%; }
+        width: 100%;
+        opacity: 20%; }
       .hero-slider-wrapper .item .item-image::before {
         content: '';
         background: #0a0f61;
@@ -9530,14 +9535,20 @@ body {
     .hero-slider-wrapper .item .content {
       position: absolute;
       top: 33%;
-      left: 13%; }
+      left: 20%; }
       @media (max-width: 991px) {
         .hero-slider-wrapper .item .content {
           top: 20%; } }
       @media (max-width: 575px) {
         .hero-slider-wrapper .item .content {
-          top: 0; } }
+          top: 42%; } }
       .hero-slider-wrapper .item .content h2 {
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
         font-weight: 600;
         line-height: 110px;
         font-size: 80px;
@@ -9559,8 +9570,8 @@ body {
         margin-bottom: 95px;
         letter-spacing: 2px;
         font-weight: 400;
-        font-size: 20px;
-        font-family: "bebas_neue_regular"; }
+        font-size: 30px;
+        font-family: "bebas_neue_pro"; }
         @media (max-width: 1200px) {
           .hero-slider-wrapper .item .content h3 {
             font-size: 20px;
@@ -9571,13 +9582,21 @@ body {
             letter-spacing: 1px;
             margin-bottom: 30px; } }
       .hero-slider-wrapper .item .content .hero-btn {
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
         padding: 25px 50px;
+        font-size: 1.5rem;
         font-weight: 600;
         color: #fff;
         border-radius: 0;
         border: none;
         letter-spacing: 2px;
-        background: #FF1D5D; }
+        background: #e91e63; }
         @media (max-width: 991px) {
           .hero-slider-wrapper .item .content .hero-btn {
             padding: 20px 30px; } }
@@ -9622,7 +9641,7 @@ body {
     position: relative;
     font-size: 13px;
     margin-top: 20px;
-    font-family: "bebas_neue_regular"; }
+    font-family: "bebas_neue_pro"; }
     .scroll h6::before {
       position: absolute;
       content: '';
@@ -9780,6 +9799,28 @@ body {
       @media (max-width: 1200px) {
         .mission-content .video iframe {
           min-height: 350px; } }
+  .mission-content .hero-btn {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    /*display: flex;*/
+    flex-wrap: wrap;
+    padding: 25px 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+    letter-spacing: 2px;
+    background: #e91e63; }
+    @media (max-width: 991px) {
+      .mission-content .hero-btn {
+        padding: 20px 30px; } }
+    @media (max-width: 575px) {
+      .mission-content .hero-btn {
+        padding: 15px 25px; } }
 .vision {
   padding: 180px 0 100px 0;
   overflow: hidden; }
@@ -9820,8 +9861,8 @@ body {
   position: relative;
   z-index: 6; }
   .visions::before {
-    content: 'MADE THINGS';
-    font-family: "bebas_neue_regular";
+    content: '';
+    font-family: "bebas_neue_pro";
     position: absolute;
     top: 18%;
     width: 100%;
@@ -10137,14 +10178,17 @@ body {
           content: none; } }
   .contact .text-block {
     position: relative;
-    margin-bottom: 240px;
+    margin-bottom: 50px;
+    /*240px;*/
     z-index: 3; }
     @media (max-width: 991px) {
       .contact .text-block {
-        margin-bottom: 150px; } }
+        margin-bottom: 30px;
+        /*150px;*/ } }
     @media (max-width: 575px) {
       .contact .text-block {
-        margin-bottom: 50px; } }
+        margin-bottom: 10px;
+        /*50px;*/ } }
     .contact .text-block h2 {
       position: relative;
       margin-bottom: 42px;
@@ -10180,6 +10224,17 @@ body {
           font-size: 16px;
           line-height: 25px;
           max-width: 100%; } }
+  .contact .col-lg-7 {
+    margin-left: 130px; }
+    @media (max-width: 991px) {
+      .contact .col-lg-7 {
+        margin-left: 0px; } }
+    @media (max-width: 767px) {
+      .contact .col-lg-7 {
+        margin-left: 0px; } }
+    @media (max-width: 575px) {
+      .contact .col-lg-7 {
+        margin-left: 0px; } }
 .map-div {
   position: relative; }
   .map-div #map {
@@ -10388,13 +10443,13 @@ ul.social-list li a {
       letter-spacing: 1px;
       color: #fff; }
     .jd-modal .modal-content .modal-body .form-control:focus {
-      border-color: #FF1D5D; }
+      border-color: #e91e63; }
   .jd-modal .modal-content .modal-body .form-title {
     margin-bottom: 30px; }
 
 .apply-btn {
   padding: 15px 25px;
-  background: #FF1D5D;
+  background: #e91e63;
   color: #fff;
   border-radius: 0;
   letter-spacing: 2px;
