@@ -9467,8 +9467,6 @@ body {
     -webkit-transform: scale(1); } }
 
 .nav-section {
-  position: absolute;
-  top: 0;
   background-color: rgba(13, 45, 77, 0.45);
   width: 100%;
   /* background: transparent; */
@@ -9508,6 +9506,12 @@ body {
     @media (max-width: 991px) {
       #main-nav .navbar-nav .hamburger-icon {
         display: none; } }
+.hero-slider {
+  background-image: url("../images/hero-image/industrial-plant.jpg");
+  background-size: cover; }
+  .hero-slider .tint {
+    background-color: #0d2d4d73; }
+
 .hero-slider-wrapper {
   position: relative;
   z-index: 5; }
@@ -9533,9 +9537,10 @@ body {
       .hero-slider-wrapper .item .item-image:after {
         background: #38396B; }
     .hero-slider-wrapper .item .content {
-      position: absolute;
+      /* position: absolute; */
       top: 33%;
-      left: 20%; }
+      /*left: 20%;*/
+      padding: 20% 0; }
       @media (max-width: 991px) {
         .hero-slider-wrapper .item .content {
           top: 20%; } }
